@@ -1,17 +1,17 @@
-- name: play with variables
+- name: play level variables
   hosts: local
   connection: local
   vars:
-    course: ANSIBLE
-    hours: 10HRS
-    Trainer: SIVAKUMAR
+    COURSE: Ansible 
+    DURATION: 10HR
+    TRAINER: Sivakumar
   tasks:
-  - name: print Course information
-    ansible.buildin.debug:
-
-      msg: "Hi Folks!, {{ course }} for {{ hours }} trainer is {{ Trainer }}"
-
-  - name: print Course information again
+  - name: print course information
     ansible.builtin.debug:
-      msg: "Hello {{ course }}, Course Duration: {{ hours }}, trainer is {{ Trainer }}"
-  
+    #vars refernce should be surrounded by ""
+      msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print course information again
+    ansible.builtin.debug:
+    #vars refernce should be surrounded by ""
+      msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
