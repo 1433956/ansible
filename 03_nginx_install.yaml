@@ -3,13 +3,16 @@
   connection: local
   become: yes
   tasks:
-  -name: install nginx
+  - name: install nginx
   ansible.builtin.package:
     name: nginx
     state: present
 
-  -name: start nginx
+  - name: run  nginx
   ansible.builtin.service:
     name: nginx
     state: installed
     enabled: yes
+  
+
+  
