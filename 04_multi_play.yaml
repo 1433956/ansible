@@ -2,21 +2,7 @@
   hosts: local
   connection: local
   tasks:
-   - name: ping by user_1
-     ansible.buildin.debug:
-       msg: "hi ping by role_1 and task_1"
+   - name: 
+  
    
-   - name: ping by user_1
-     ansible.buildin.debug:
-        msg: "hi ping by role_1 and task_2"
-- name: role2
-  hosts: local
-  connection: local
-  tasks:
-   - name: ping by user_2
-     ansible.buildin.debug:
-       msg: "hi ping by role_1 and task_1"
    
-   - name: ping by user_2
-     ansible.buildin.debug:
-       msg: "hi ping by role_1 and task_2"
