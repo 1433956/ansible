@@ -1,4 +1,4 @@
-- name: play with varivbles
+- name: play with variables
   hosts: local
   connection: local
   vars:
