@@ -1,5 +1,5 @@
 - name: install different packages
-  host: frontend
+  hosts: frontend
   tasks:
   - name: installing mysql nginx nodejs
     ansible.builtin.dnf:
