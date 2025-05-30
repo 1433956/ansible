@@ -1,15 +1,10 @@
-- name: printing course inforamtion and getting from another file
-
+- name: print course info by reading file
   hosts: local
-
   connection: local
-
-  vars_files:
+  vars_file:
   - course.yaml
 
-  tasks: 
-
-  - name: print course information
-    ansible.buildin.debug:
-
-       msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
+  tasks:
+  - name: course info
+  ansible.buildin.debug:
+    msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
