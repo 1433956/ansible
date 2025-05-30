@@ -12,7 +12,7 @@
     ansible.buildin.debug:
       msg: "Hello {{ COURSE }}, course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"  
 
-  tasks:
-  - name: print global course information
-    ansible.buildin.debug:
-      msg: "Hello {{ COURSE }}, Course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"
+  # tasks:
+  # - name: print global course information
+  #   ansible.buildin.debug:
+  #     msg: "Hello {{ COURSE }}, Course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"
