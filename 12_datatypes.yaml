@@ -1,21 +1,18 @@
-- name: datatypes in ansible
+- name: ansible datatypes
   hosts: local
   connection: local
-  vars: 
-    DURATION: 10HRS #INT
+  vars:
+    DURATION: 120 # This is number
     COURSE: "DevSecOps with AWS" # String
-    TRAINER: SIVA #STRING
-    IS_LIVE:  true #boolean
-    Tools: # list
+    IS_LIVE: true # boolean
+    TOOLS: # List []
+    - Linux
+    - shell
     - Ansible
-    - AWS
-    - DevOps
     CONCETPS: # map or dictionary or object. referred like {}
       CI: Jenkins
-      SCRIPTING: "SHELL,ANSIBLE,PYTHON"
-    tasks:
-    - name: print course information
-      ansible.builtin.debug:
-        msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
-       
- 
+      SCRIPTING: "Shell, Ansible, Terraform, Python"
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
