@@ -3,7 +3,7 @@
   tasks:
   - name: installing mysql, nodejs
     ansible.builtin.dnf:
-      name: {{ item }}
+      name: "{{ item }}"
       state: installed
     loop:
     - mysql
