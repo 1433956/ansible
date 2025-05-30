@@ -14,8 +14,8 @@
       CI: Jenkins
       SCRIPTING: "SHELL,ANSIBLE,PYTHON"
     tasks:
-    - name: printing course info
+    - name: print course information
       ansible.builtin.debug:
-         msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
+        msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
        
  
