@@ -5,14 +5,15 @@
     COURSE: DevOps with AWS
     DURATION: 10HR
     TRAINER: Sivakumar
-    tasks:
-    - name: print course information
-      vars:
-        COURSE: DevOps
-    ansible.buildin.debug:
+  tasks:
+  - name: print course information
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+    #vars refernce should be surrounded by ""
       msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
-    tasks:
-    - name: print course information again
-    ansible.buildin.debug:
+
+  - name: print course information again
+    ansible.builtin.debug:
+    #vars refernce should be surrounded by ""
       msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
-      
