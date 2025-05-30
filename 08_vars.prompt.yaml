@@ -1,15 +1,15 @@
-- name: promt form users
-  hosts: local
-  connection: local
-  vars_prompt:
-  - name: username  
-    prompt: please enter username
-    private: yes
+ - name: promt form users
+   hosts: local
+   connection: local
+   vars_prompt:
+   - name: username  
+     prompt: please enter username
+     private: yes
   
-  - name: password  
-    prompt: please enter password
-    private: yes
-  tasks:
-  - name: print user info
-    ansible.buildin.debug:
-      msg: "hi folks! your credntials {{ username }} {{ password }}"
+   - name: password  
+     prompt: please enter password
+     private: yes
+   tasks:
+   - name: print user info
+     ansible.buildin.debug:
+       msg: "hi folks! your credntials {{ username }} {{ password }}"
