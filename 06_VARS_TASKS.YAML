@@ -1,0 +1,17 @@
+- name : play 1
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Ansible
+    HOURS: 10HRS
+    TRANIER: Siva 
+  tasks:
+  - name: print course information
+    vars:
+      COURSE: AWS
+    ansible.buildin.debug:
+      msg: "Hello {{ COURSE }}, Course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"  
+  tasks:
+  - name: print course information
+    ansible.buildin.debug:
+      msg: "Hello {{ COURSE }}, Course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"
