@@ -11,5 +11,5 @@
     private: yes
   tasks:
   - name: print user info
-  ansible.buildin.debug:
-    msg: "hi folks! your credntials {{ username }} {{ password }}"
+    ansible.buildin.debug:
+      msg: "hi folks! your credntials {{ username }} {{ password }}"
