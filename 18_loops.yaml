@@ -1,7 +1,7 @@
 - name: install different packages
   host: frontend
   tasks:
-  - name: installing mysql, nodejs
+  - name: installing mysql nginx nodejs
     ansible.builtin.dnf:
       name: "{{ item }}"
       state: installed
