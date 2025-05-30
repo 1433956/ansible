@@ -9,7 +9,7 @@
 
   tasks: 
 
-  - name: printing course information
+  - name: print course information
     ansible.buildin.debug:
-    
+
        msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
