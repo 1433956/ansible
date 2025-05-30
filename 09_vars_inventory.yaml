@@ -5,9 +5,3 @@
   - name: course details from inventory
     ansible.buildin.debug:
       msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
-
-#[local:vars]
-#  COURSE=variables
-#  TRAINER=Sivakumar
-#  DURATION=1.5HR
-#  GREETING="Hello from Inventory"
