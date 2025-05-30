@@ -1,0 +1,8 @@
+- name: install nginx based linux flavours
+  hosts: frontend
+  tasks:
+  - name: install nginx if it is redhat
+    ansible.builtin.debug:
+      msg: "installing in nginx"
+    when: os_family == 'RedHat'
+    
