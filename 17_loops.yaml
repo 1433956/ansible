@@ -4,7 +4,7 @@
   tasks:
   - name: loops in ansible
     ansible.builtin.debug:
-      msg: "Today's Menu :: , {{ item }}"
+      msg: "Today's Menu ::  {{ item }}"
     loop:
     - idly
     - dosa
