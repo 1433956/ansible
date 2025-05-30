@@ -5,13 +5,13 @@
     COURSE: DevOps with AWS
     DURATION: 10HR
     TRAINER: Sivakumar
-    tasks:
+  tasks:
     - name: print course information
       vars:
         COURSE: DevOps
       ansible.buildin.debug:
         msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
-    tasks:
+  tasks:
     - name: print course information again
       ansible.buildin.debug:
         msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
