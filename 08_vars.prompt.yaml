@@ -1,8 +1,8 @@
-- name: vara from prompt
+- name: variables from prompt
   hosts: local
   connection: local
   vars_prompt:
-  - name: username
+  - name: USERNAME
     PRIVATE: true
   - name: PASSWORD
     PRIVATE: true
