@@ -2,7 +2,16 @@
   hosts: frontend
   tasks:
   - name: install nginx if it is redhat
-    ansible.builtin.debug:
-      msg: "installing in nginx"
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+      
     when: ansible_os_family == "RedHat"
+  task:  
+  - name: install nginx if it is redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+      
+    when: ansible_os_family == "Debian"
     
