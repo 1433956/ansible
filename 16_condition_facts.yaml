@@ -7,7 +7,7 @@
       state: present
       
     when: ansible_os_family == "RedHat"
-  task:  
+  tasks:  
   - name: install nginx if it is redhat
     ansible.builtin.dnf:
       name: nginx
