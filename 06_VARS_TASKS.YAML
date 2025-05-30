@@ -7,10 +7,10 @@
     TRANIER: Siva 
   tasks:
   - name: print course information
-    vars:
-      COURSE: AWS
-    ansible.buildin.debug:
-      msg: "Hello {{ COURSE }}, course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"  
+  ansible.buildin.debug:
+    msg: "Hello {{ COURSE }}, course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}" 
+
+     
 
   # tasks:
   # - name: print global course information
