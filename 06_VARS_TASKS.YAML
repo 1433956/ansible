@@ -10,7 +10,8 @@
     vars:
       COURSE: AWS
     ansible.buildin.debug:
-      msg: "Hello {{ COURSE }}, Course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"  
+      msg: "Hello {{ COURSE }}, course Duration: {{ HOURS }}, Trainer is {{ TRANIER }}"  
+
   tasks:
   - name: print course information
     ansible.buildin.debug:
